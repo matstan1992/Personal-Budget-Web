@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html lang="pl"> 
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="shortcut icon" href="img/ikona.png" />
+	
+	<title>Wydatek</title>
+	
+	<meta name="description" content="Aplikacja do zarządzania swoimi finansami." />
+	<meta name="keywords" content="aplikacja, budżet, osobosty, wydatki, przychody, bilans, oszczędzanie, finanse" />
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+	
+</head>
+
+<body>
+	
+		<header>
+			<div id="container">
+				<div id="title"><h1>Osobisty Menadżer Budżetu</h1></div>
+				<div id="motto">... żyj po swojemu ;-)</div>
+			</div>
+		</header>
+			
+		<nav id="topnav">
+			
+			<ol class="menu">
+				<li><a href="menu.html">Strona główna</a></li>
+				<li><a href="#">Dodaj przychód</a></li>
+				<li><a href="#" style="text-decoration: underline;">Dodaj wydatek</a></li>
+				<li><a href="bilans.html">Przeglądaj bilans</a></li>
+				<li><a href="#">Ustawienia</a></li>
+				<li><a href="logowanie.html">Wyloguj się (Użytkownik)</a></li>
+			</ol>
+			
+		</nav>
+		
+		<main class="description">
+			
+			<article>
+				
+				<h2 style="margin-top: 0px;">Dodaj wydatek</h2>
+
+				<div class="row">
+					<label> <span id="titleForm"> Kwota: </span> <input id="amount" type="number" name="amount" step="0.01" required> zł</label>
+				</div>
+				<div class="row">
+					<label><span id="titleForm"> Data: </span><input id="date" type="date" name="day" required></label>
+				</div>
+				
+				<div class="row">
+					<fieldset>
+						
+						<legend><span id="titleForm"> Sposób płatności:</span> </legend>
+						<div id="paymentMethod">
+							<div style="display: inline-block; margin-right: 175px;"><label><input type="radio" value="cash" name="paymentMethod" checked> Gotówka </label></div>
+							<div style="display: inline-block; margin-right: 115px;"><label><input type="radio" value="debitCard" name="paymentMethod"> Karta debetowa </label></div>
+							<div style="display: inline-block;"><label><input type="radio" value="creditCard" name="paymentMethod"> Karta kredytowa </label></div>
+						</div>
+					</fieldset>
+				</div>
+
+				<div class="row">
+					<fieldset>
+						
+						<legend><span id="titleForm"> Kategoria: </span></legend>
+						<div class="col">
+							<div><label><input type="radio" value="food" name="category" checked> Jedzenie </label></div>
+							<div><label><input type="radio" value="flat" name="category"> Mieszkanie </label></div>
+							<div><label><input type="radio" value="transport" name="category"> Transport </label></div>
+							<div><label><input type="radio" value="telecommunication" name="category"> Telekomunikacja </label></div>
+							<div><label><input type="radio" value="healthcare" name="category"> Opieka zdrowotna </label></div>
+							<div><label><input type="radio" value="clothes" name="category"> Ubranie </label></div>
+						</div>
+						<div class="col">
+							<div><label><input type="radio" value="hygiene" name="category"> Higiena </label></div>
+							<div><label><input type="radio" value="children" name="category"> Dzieci </label></div>
+							<div><label><input type="radio" value="entertainment" name="category"> Rozrywka </label></div>
+							<div><label><input type="radio" value="tour" name="category"> Wycieczka </label></div>
+							<div><label><input type="radio" value="training" name="category"> Szkolenia </label></div>
+							<div><label><input type="radio" value="books" name="category"> Książki </label></div>
+						</div>
+						<div class="col">
+							<div><label><input type="radio" value="savings" name="category"> Oszczędności </label></div>
+							<div><label><input type="radio" value="pension" name="category"> Emerytura </label></div>
+							<div><label><input type="radio" value="debtRepayment" name="category"> Spłata długów </label></div>
+							<div><label><input type="radio" value="donation" name="category"> Darowizna </label></div>
+							<div><label><input type="radio" value="otherExpenses" name="category"> Inne wydatki </label></div>
+						</div>
+					</fieldset>
+				</div>
+					
+				<div class="row" style="margin-bottom: 0">
+					<div><label for="comment"><span id="titleForm"> Komentarz (opcjonalnie) </span></label></div>
+					<textarea name="comment" id="comment" rows="1" cols="80"></textarea>
+				</div>
+				
+				<div class="row" style="margin-bottom: 0; text-align: center;">
+					<input type="submit" value="Dodaj">
+					<input id="anuluj" type="submit" value="Anuluj">
+				</div>
+				
+			</article>
+			
+		</main>
+		
+		<footer style="margin-top: 36px;">
+			Wszelkie prawa zastrzeżone &copy; 2020  Dziękuję za wizytę!
+		</footer>
+		
+</body>
+</html>
