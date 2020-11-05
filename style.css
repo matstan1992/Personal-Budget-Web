@@ -1,0 +1,186 @@
+body
+{
+	/* Background pattern from Toptal Subtle Patterns */
+	background-image: url("img/tlo.png");
+	font-family: 'Lato', sans-serif;
+	margin: 0 !important;
+}
+
+header
+{
+	margin-top: 25px;
+	background-color: lightskyblue;
+	width: 100%;
+}
+
+/* Rejestracja, Logowanie*/
+#container
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	height: 120px;
+	text-align: center;
+	padding:0;
+	color: white;
+	text-transform: uppercase;
+}
+
+#title
+{
+	display: inline-block;
+	text-align: center;
+	letter-spacing: 2px;
+	height: 75px;
+	font-size: 20px;
+}
+
+#motto
+{
+	text-align: right;
+	margin-top: 10px;
+	letter-spacing: 2px;
+	font-size: 20px;
+}
+
+#content
+{
+	background-color: #fff;
+	color: #666;
+	width: 300px;
+	padding: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	-webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+	box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+}
+
+.selected, .noselected
+{
+	display: inline-block;
+	border: 2px solid #76BDEA;
+	border-radius: 10px;
+	text-align: center;
+	width: 118px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.selected
+{
+	background-color: #CAF0FF;
+	color: #0a2b42;
+}
+
+.noselected
+{
+	color: #0a2b42;
+}
+
+h3
+{
+	height: 8px;
+}
+
+input[type=text],
+input[type=email],
+input[type=password]
+{
+	width: 300px;
+	background-color: #efefef;
+	color: #666;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top: 10px;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus
+{
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	border: 2px solid #76BDEA;
+	background-color: #CAF0FF;
+	color: #0a2b42;
+}
+
+input[type=submit]
+{
+	width: 300px;
+	background-color: #87CEFA;
+	font-size: 20px;
+	color: white;
+	padding: 15px 10px;
+	margin-top: 30px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+}
+
+input[type=submit]:focus
+{
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+}
+
+input[type=submit]:hover
+{
+	background-color: #76BDEA;
+}
+
+input::-webkit-input-placeholder
+{
+    color: #999;
+}
+input:focus::-webkit-input-placeholder
+{
+    color: #0a2b42;
+}
+/* Firefox < 19 */
+input:-moz-placeholder
+{
+    color: #999;
+}
+input:focus:-moz-placeholder
+{
+    color: #0a2b42;
+}
+/* Firefox > 19 */
+input::-moz-placeholder
+{
+    color: #999;
+}
+input:focus::-moz-placeholder
+{
+    color: #0a2b42;
+}
+/* Internet Explorer 10 */
+input:-ms-input-placeholder
+{
+    color: #999;
+}
+input:focus:-ms-input-placeholder
+{
+    color: #0a2b42;
+}
+
+footer
+{
+	margin-top: 50px;
+	padding:20px;
+	background-color: #1c74b2;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+}
