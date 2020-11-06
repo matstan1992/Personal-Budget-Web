@@ -7,10 +7,12 @@
 	
 	<title>Wydatek</title>
 	
-	<meta name="description" content="Aplikacja do zarządzania swoimi finansami." />
+	<meta name="description" content="Dodaj wydatek - Aplikacja do zarządzania swoimi finansami." />
 	<meta name="keywords" content="aplikacja, budżet, osobosty, wydatki, przychody, bilans, oszczędzanie, finanse" />
 	<link rel="stylesheet" href="style.css" type="text/css"/>
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+	<script src="jquery-3.5.1.min.js"></script>
+	<script src="personalBudget.js"></script>
 	
 </head>
 
@@ -46,7 +48,7 @@
 					<label> <span id="titleForm"> Kwota: </span> <input id="amount" type="number" name="amount" step="0.01" required> zł</label>
 				</div>
 				<div class="row">
-					<label><span id="titleForm"> Data: </span><input id="date" type="date" name="day" required></label>
+					<label><span id="titleForm"> Data: </span><input id="date" type="date" name="date" required></label>
 				</div>
 				
 				<div class="row">
@@ -108,6 +110,10 @@
 		<footer style="margin-top: 36px;">
 			Wszelkie prawa zastrzeżone &copy; 2020  Dziękuję za wizytę!
 		</footer>
+		
+		<script>
+			setCurrentDate();
+		</script>
 		
 </body>
 </html>
