@@ -268,7 +268,7 @@ footer
 	border: 2px solid #0a2b42;
 }
 
-/*Wydatki*/
+/*Dodaj wydatek*/
 #titleForm
 {
 	font-size: 20px;
@@ -348,4 +348,105 @@ textarea
 #anuluj:hover
 {
 	background-color: #bb0000;
+}
+
+/*Przeglądaj bilans*/
+#west
+{
+	width: 800px;
+	float: left;
+}
+
+#east
+{
+	width: 200px;
+	float: left;
+	text-align: center;
+}
+
+/*Przeglądaj bilans - Dropdown */
+#dropdown ol
+{
+	background-color: #87CEFA;
+	color: white;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-size: 18px;
+	height: 40px;
+	line-height: 200%;
+	display: inline-block;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	width: 160px;
+}
+
+#dropdown ol:hover
+{
+	background-color: #76BDEA;
+	cursor: pointer;
+}
+
+#dropdown ol > li >ul
+{
+	height: 40px;
+	text-align: center;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: none;
+}
+
+#dropdown ol:hover > li >ul
+{
+	display: block;
+}
+
+#dropdown ol > li > ul > li
+{
+	background-color: #87CEFA;
+	position: relative;
+	z-index: 100;
+	border-top: 1px dashed #fff;
+}
+
+#dropdown ol > li > ul > li:hover
+{
+	background-color: #76BDEA;
+}
+
+/* przeglądaj bilans - tabele */
+#expensesTable
+{
+	margin-bottom: 20px;
+	float: left;
+	width: 350px;
+	border: 3px solid #000;
+}
+#incomesTable
+{
+	margin-bottom: 20px;
+	margin-right: 20px;
+	float: left;
+	width: 350px;
+	border: 3px solid #000;
+}
+
+td, th 
+{
+    border: 1px solid #000;
+    text-align: left;
+    padding: 8px;
+}
+
+.caption
+{
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.cellResult
+{
+	font-weight: 700;
+	background-color: lightgreen;
 }
