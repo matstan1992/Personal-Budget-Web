@@ -4,6 +4,8 @@ body
 	background-image: url("img/tlo.png");
 	font-family: 'Lato', sans-serif;
 	margin: 0 !important;
+	padding: 0;
+	line-height: 1.3;
 }
 
 header
@@ -11,47 +13,25 @@ header
 	margin-top: 25px;
 	background-color: lightskyblue;
 	width: 100%;
-}
-
-/* Rejestracja, Logowanie*/
-#container
-{
-	margin-left: auto;
-	margin-right: auto;
-	width: 1000px;
-	height: 120px;
-	text-align: center;
-	padding:0;
-	color: white;
-	text-transform: uppercase;
-}
-
-#title
-{
-	display: inline-block;
-	text-align: center;
 	letter-spacing: 2px;
-	height: 75px;
-	font-size: 20px;
 }
 
-#motto
+#text
+{
+	font-size: 17px;
+}
+/* Rejestracja, Logowanie*/
+
+.motto
 {
 	text-align: right;
-	margin-top: 10px;
-	letter-spacing: 2px;
+	padding-bottom: 5px;
 	font-size: 20px;
+	font-weight: 700;
 }
 
-#content
+.content
 {
-	background-color: #fff;
-	color: #666;
-	width: 300px;
-	padding: 50px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 50px;
 	-webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
 	-moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
 	box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
@@ -63,7 +43,7 @@ header
 	border: 2px solid #76BDEA;
 	border-radius: 10px;
 	text-align: center;
-	width: 118px;
+	width: 160px;
 	padding: 10px;
 	margin-bottom: 20px;
 }
@@ -79,25 +59,15 @@ header
 	color: #0a2b42;
 }
 
-h3
-{
-	height: 8px;
-}
-
 input[type=text],
 input[type=email],
 input[type=password]
 {
-	width: 300px;
 	background-color: #efefef;
 	color: #666;
 	border: 2px solid #ddd;
 	border-radius: 5px;
-	font-size: 18px;
-	padding: 10px;
 	box-sizing: border-box;
-	outline: none;
-	margin-top: 10px;
 }
 
 input[type=text]:focus,
@@ -112,9 +82,8 @@ input[type=password]:focus
 	color: #0a2b42;
 }
 
-input[type=submit]
+button[type=submit]
 {
-	width: 300px;
 	background-color: #87CEFA;
 	font-size: 20px;
 	color: white;
@@ -127,14 +96,14 @@ input[type=submit]
 	outline: none;
 }
 
-input[type=submit]:focus
+button[type=submit]:focus
 {
 	-webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
 	-moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
 	box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
 }
 
-input[type=submit]:hover
+button[type=submit]:hover
 {
 	background-color: #76BDEA;
 }
@@ -177,12 +146,8 @@ input:focus:-ms-input-placeholder
 
 footer
 {
-	margin-top: 50px;
-	padding:20px;
 	background-color: #1c74b2;
 	font-size: 20px;
-	color: #fff;
-	text-align: center;
 }
 
 /* strona główna*/
@@ -269,7 +234,7 @@ footer
 }
 
 /*Dodaj wydatek*/
-#titleForm
+.titleForm
 {
 	font-size: 20px;
 	font-weight: bold;
@@ -365,52 +330,54 @@ textarea
 }
 
 /*Przeglądaj bilans - Dropdown */
-#dropdown ol
+.dropbtn 
 {
 	background-color: #87CEFA;
 	color: white;
-	padding: 0;
-	margin: 0;
-	list-style-type: none;
-	font-size: 18px;
+	font-size: 16px;
+	cursor: pointer;
 	height: 40px;
-	line-height: 200%;
-	display: inline-block;
 	border: 2px solid #fff;
 	border-radius: 5px;
 	width: 160px;
 }
 
-#dropdown ol:hover
+.dropdown 
 {
-	background-color: #76BDEA;
-	cursor: pointer;
+	position: relative;
+	display: inline-block;
 }
 
-#dropdown ol > li >ul
+.dropdown-content 
 {
-	height: 40px;
-	text-align: center;
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
 	display: none;
+	position: absolute;
+	background-color: #87CEFA;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
 }
 
-#dropdown ol:hover > li >ul
+.dropdown-content a 
+{
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	border-top: 1px dashed #fff;
+}
+
+.dropdown-content a:hover 
+{
+	background-color: #76BDEA
+}
+
+.dropdown:hover .dropdown-content 
 {
 	display: block;
 }
 
-#dropdown ol > li > ul > li
-{
-	background-color: #87CEFA;
-	position: relative;
-	z-index: 100;
-	border-top: 1px dashed #fff;
-}
-
-#dropdown ol > li > ul > li:hover
+.dropdown:hover .dropbtn 
 {
 	background-color: #76BDEA;
 }
