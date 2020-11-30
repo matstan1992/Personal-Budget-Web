@@ -6,9 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<link rel="shortcut icon" href="img/ikona.png" />
 	
-	<title>Wydatek</title>
+	<title>Przychód</title>
 	
-	<meta name="description" content="Dodaj wydatek - Aplikacja do zarządzania swoimi finansami." />
+	<meta name="description" content="Dodaj przychód - Aplikacja do zarządzania swoimi finansami." />
 	<meta name="keywords" content="aplikacja, budżet, osobosty, wydatki, przychody, bilans, oszczędzanie, finanse" />
 	
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -43,12 +43,12 @@
 						<a class="nav-link" href="menu.html"><i class="icon-home"> Strona główna </i></a>
 					</li>
 					
-					<li class="nav-item">
-						<a class="nav-link" href="przychod.html"><i class="icon-money"> Dodaj przychód </i></a>
+					<li class="nav-item active">
+						<a class="nav-link" href="#"><i class="icon-money"> Dodaj przychód </i></a>
 					</li>
 					
-					<li class="nav-item active">
-						<a class="nav-link" href="#"><i class="icon-basket"> Dodaj wydatek </i></a>
+					<li class="nav-item">
+						<a class="nav-link" href="wydatek.html"><i class="icon-basket"> Dodaj wydatek </i></a>
 					</li>
 					
 					<li class="nav-item">
@@ -76,7 +76,7 @@
 					<div class="row">
 						<div class="mx-auto">
 							<form class="text-center">
-								<h2 class="font-weight-bold mt-4">Dodaj wydatek</h2>
+								<h2 class="font-weight-bold mt-4">Dodaj przychód</h2>
 
 								<div class="row mx-auto mt-4">
 									<div class="form-group form-inline mx-auto">
@@ -100,42 +100,15 @@
 
 								<fieldset class="mx-auto">
 									
-									<legend class="font-weight-bold">Sposób płatności:</legend>
+									<legend class="font-weight-bold">Kategoria:</legend>
 									<div class="mt-2">
-										<div class="d-inline-block"><label><input type="radio" value="cash" name="paymentMethod" checked> Gotówka </label></div>
-										<div class="d-inline-block mr-4 ml-4"><label><input type="radio" value="debitCard" name="paymentMethod"> Karta debetowa </label></div>
-										<div class="d-inline-block"><label><input type="radio" value="creditCard" name="paymentMethod"> Karta kredytowa </label></div>
+										<div><label><input type="radio" value="salary" name="category" checked> Wynagrodzenie </label></div>
+										<div><label><input type="radio" value="bankInterest" name="category"> Odsetki bankowe </label></div>
+										<div><label><input type="radio" value="saleOnAllegro" name="category"> Sprzedaż na Allegro </label></div>
+										<div><label><input type="radio" value="other" name="category"> Inne </label></div>
 									</div>
 								</fieldset>
 
-								<fieldset class="mx-auto mt-4">
-									
-									<legend class="font-weight-bold">Kategoria:</legend>
-									<div class="col">
-										<div><label><input type="radio" value="food" name="category" checked> Jedzenie </label></div>
-										<div><label><input type="radio" value="flat" name="category"> Mieszkanie </label></div>
-										<div><label><input type="radio" value="transport" name="category"> Transport </label></div>
-										<div><label><input type="radio" value="telecommunication" name="category"> Telekomunikacja </label></div>
-										<div><label><input type="radio" value="healthcare" name="category"> Opieka zdrowotna </label></div>
-										<div><label><input type="radio" value="clothes" name="category"> Ubranie </label></div>
-									</div>
-									<div class="col">
-										<div><label><input type="radio" value="hygiene" name="category"> Higiena </label></div>
-										<div><label><input type="radio" value="children" name="category"> Dzieci </label></div>
-										<div><label><input type="radio" value="entertainment" name="category"> Rozrywka </label></div>
-										<div><label><input type="radio" value="tour" name="category"> Wycieczka </label></div>
-										<div><label><input type="radio" value="training" name="category"> Szkolenia </label></div>
-										<div><label><input type="radio" value="books" name="category"> Książki </label></div>
-									</div>
-									<div class="col">
-										<div><label><input type="radio" value="savings" name="category"> Oszczędności </label></div>
-										<div><label><input type="radio" value="pension" name="category"> Emerytura </label></div>
-										<div><label><input type="radio" value="debtRepayment" name="category"> Spłata długów </label></div>
-										<div><label><input type="radio" value="donation" name="category"> Darowizna </label></div>
-										<div><label><input type="radio" value="otherExpenses" name="category"> Inne wydatki </label></div>
-									</div>
-								</fieldset>
-									
 								<div class="mx-auto mt-4">
 									<label class="h4 font-weight-bold">Komentarz (opcjonalnie):</label>
 									<textarea name="comment" class="col-10" rows="2" cols="50"></textarea>
