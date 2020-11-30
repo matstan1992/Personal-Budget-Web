@@ -201,6 +201,7 @@ footer
 	text-decoration: none;
 }
 */
+/*
 .description
 {
 	margin-top: 30px;
@@ -226,7 +227,7 @@ footer
 {
 	color: #0a2b42;
 }
-
+*/
 .imagemenu
 {
 	padding: 5px;
@@ -237,17 +238,6 @@ footer
 }
 
 /*Dodaj wydatek*/
-.titleForm
-{
-	font-size: 20px;
-	font-weight: bold;
-}
-
-#paymentMethod
-{
-	padding: 10px;
-}
-
 .row
 {
 	font-size: 18px;
@@ -261,11 +251,6 @@ footer
 	width: 250px;
 }
 
-#date
-{
-	margin-left: 15px;
-}
-
 textarea,
 input[type=number], 
 input[type=date]
@@ -277,7 +262,6 @@ input[type=date]
 	border-radius: 5px;
 	font-size: 18px;
 	padding: 5px;
-	box-sizing: border-box;
 	outline: none;
 }
 
@@ -295,17 +279,7 @@ input[type=date]:focus
 
 textarea
 {
-	margin: 0px; 
-	width: 1000px; 
-	height: 45px;
 	resize: none;
-}
-
-.row > input[type=submit]
-{
-    margin-top: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
 }
 
 #anuluj
