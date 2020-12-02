@@ -4,6 +4,8 @@ body
 	background-image: url("img/tlo.png");
 	font-family: 'Lato', sans-serif;
 	margin: 0 !important;
+	padding: 0;
+	line-height: 1.3;
 }
 
 header
@@ -11,47 +13,25 @@ header
 	margin-top: 25px;
 	background-color: lightskyblue;
 	width: 100%;
-}
-
-/* Rejestracja, Logowanie*/
-#container
-{
-	margin-left: auto;
-	margin-right: auto;
-	width: 1000px;
-	height: 120px;
-	text-align: center;
-	padding:0;
-	color: white;
-	text-transform: uppercase;
-}
-
-#title
-{
-	display: inline-block;
-	text-align: center;
 	letter-spacing: 2px;
-	height: 75px;
-	font-size: 20px;
 }
 
-#motto
+#text
+{
+	font-size: 17px;
+}
+/* Rejestracja, Logowanie*/
+
+.motto
 {
 	text-align: right;
-	margin-top: 10px;
-	letter-spacing: 2px;
+	padding-bottom: 5px;
 	font-size: 20px;
+	font-weight: 700;
 }
 
-#content
+.content
 {
-	background-color: #fff;
-	color: #666;
-	width: 300px;
-	padding: 50px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 50px;
 	-webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
 	-moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
 	box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
@@ -63,7 +43,7 @@ header
 	border: 2px solid #76BDEA;
 	border-radius: 10px;
 	text-align: center;
-	width: 118px;
+	width: 160px;
 	padding: 10px;
 	margin-bottom: 20px;
 }
@@ -79,25 +59,15 @@ header
 	color: #0a2b42;
 }
 
-h3
-{
-	height: 8px;
-}
-
 input[type=text],
 input[type=email],
 input[type=password]
 {
-	width: 300px;
 	background-color: #efefef;
 	color: #666;
 	border: 2px solid #ddd;
 	border-radius: 5px;
-	font-size: 18px;
-	padding: 10px;
 	box-sizing: border-box;
-	outline: none;
-	margin-top: 10px;
 }
 
 input[type=text]:focus,
@@ -112,9 +82,8 @@ input[type=password]:focus
 	color: #0a2b42;
 }
 
-input[type=submit]
+button[type=submit]
 {
-	width: 300px;
 	background-color: #87CEFA;
 	font-size: 20px;
 	color: white;
@@ -127,16 +96,21 @@ input[type=submit]
 	outline: none;
 }
 
-input[type=submit]:focus
+button[type=submit]:focus,
+#zatwierdz:focus,
+#anuluj:focus
 {
 	-webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
 	-moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
 	box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
 }
 
-input[type=submit]:hover
+button[type=submit]:hover,
+#zatwierdz:hover,
+#anuluj:hover
 {
 	background-color: #76BDEA;
+	color: #fff;
 }
 
 input::-webkit-input-placeholder
@@ -177,22 +151,22 @@ input:focus:-ms-input-placeholder
 
 footer
 {
-	margin-top: 50px;
-	padding:20px;
 	background-color: #1c74b2;
 	font-size: 20px;
-	color: #fff;
-	text-align: center;
 }
 
 /* strona główna*/
-#topnav
+.navbar
 {
 	background-color: #1c74b2;
-	text-align: center;
 	margin-top: 25px;
 }
 
+.navbar-nav .navbar-item
+{
+	border-right: 1px dashed #0a2b42;
+}
+/*
 .menu
 {
 	list-style-type: none;
@@ -231,7 +205,8 @@ footer
 	color: #fff;
 	text-decoration: none;
 }
-
+*/
+/*
 .description
 {
 	margin-top: 30px;
@@ -257,45 +232,28 @@ footer
 {
 	color: #0a2b42;
 }
-
-#imagemenu
+*/
+.imagemenu
 {
 	padding: 5px;
-	margin-right: auto;
-	margin-left: auto;
-	width: 200px;
-	height: 200px;
+	width: 450px;
+	height: 450px;
 	border: 2px solid #0a2b42;
+	border-radius: 10px;
 }
 
 /*Dodaj wydatek*/
-#titleForm
-{
-	font-size: 20px;
-	font-weight: bold;
-}
-
-#paymentMethod
-{
-	padding: 10px;
-}
-
 .row
 {
 	font-size: 18px;
 	margin-bottom: 15px;
 }
 
-.col
+.column
 {
 	display: inline-block;
 	padding: 10px;
 	width: 250px;
-}
-
-#date
-{
-	margin-left: 15px;
 }
 
 textarea,
@@ -309,7 +267,6 @@ input[type=date]
 	border-radius: 5px;
 	font-size: 18px;
 	padding: 5px;
-	box-sizing: border-box;
 	outline: none;
 }
 
@@ -327,126 +284,82 @@ input[type=date]:focus
 
 textarea
 {
-	margin: 0px; 
-	width: 1000px; 
-	height: 45px;
 	resize: none;
 }
 
-.row > input[type=submit]
-{
-    margin-top: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-#anuluj
+#anuluj,
+#anulujModal
 {
 	background-color: #cc0000;
 }
 
-#anuluj:hover
+#anuluj:hover,
+#anulujModal:hover
 {
 	background-color: #bb0000;
+	color: #fff;
 }
 
-/*Przeglądaj bilans*/
-#west
+#zatwierdz
 {
-	width: 800px;
-	float: left;
+	background-color: #87CEFA;
 }
 
-#east
+#anulujModal,
+#zatwierdz
 {
-	width: 200px;
-	float: left;
-	text-align: center;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	outline: none;
+	margin: 5px;
+	padding: 8px;
 }
-
 /*Przeglądaj bilans - Dropdown */
-#dropdown ol
+.dropbtn 
 {
 	background-color: #87CEFA;
 	color: white;
-	padding: 0;
-	margin: 0;
-	list-style-type: none;
-	font-size: 18px;
+	font-size: 16px;
+	cursor: pointer;
 	height: 40px;
-	line-height: 200%;
-	display: inline-block;
 	border: 2px solid #fff;
 	border-radius: 5px;
 	width: 160px;
 }
 
-#dropdown ol:hover
+.dropdown-content 
 {
-	background-color: #76BDEA;
-	cursor: pointer;
-}
-
-#dropdown ol > li >ul
-{
-	height: 40px;
-	text-align: center;
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
 	display: none;
+	position: absolute;
+	background-color: #87CEFA;
+	width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
 }
 
-#dropdown ol:hover > li >ul
+.dropdown-content a 
 {
+	color: white;
+	text-decoration: none;
 	display: block;
 }
 
-#dropdown ol > li > ul > li
+.dropdown-content a:hover 
 {
-	background-color: #87CEFA;
-	position: relative;
-	z-index: 100;
-	border-top: 1px dashed #fff;
+	background-color: #76BDEA;
+	color: #fff;
 }
 
-#dropdown ol > li > ul > li:hover
+.dropdown:hover .dropbtn 
 {
 	background-color: #76BDEA;
 }
 
 /* przeglądaj bilans - tabele */
-#expensesTable
-{
-	margin-bottom: 20px;
-	float: left;
-	width: 350px;
-	border: 3px solid #000;
-}
-#incomesTable
-{
-	margin-bottom: 20px;
-	margin-right: 20px;
-	float: left;
-	width: 350px;
-	border: 3px solid #000;
-}
-
 td, th 
 {
     border: 1px solid #000;
-    text-align: left;
     padding: 8px;
-}
-
-.caption
-{
-	font-size: 20px;
-	font-weight: 700;
-}
-
-.cellResult
-{
-	font-weight: 700;
-	background-color: lightgreen;
 }
