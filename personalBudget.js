@@ -28,10 +28,11 @@ var options =
 	title: 'Wydatki',
 	backgroundColor: 'none',
 	titleFontSize: 20,
-	legendFontSize: 16,
-	width: 700,
-	height: 250,
-	marginBottom: 0,
+	legend: 'none',
+	width: '100%',
+	height: 320,
+	margin: 0,
+	padding: 0,
 	is3D: true,
 };
 

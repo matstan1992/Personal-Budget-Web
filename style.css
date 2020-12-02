@@ -96,16 +96,21 @@ button[type=submit]
 	outline: none;
 }
 
-button[type=submit]:focus
+button[type=submit]:focus,
+#zatwierdz:focus,
+#anuluj:focus
 {
 	-webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
 	-moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
 	box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
 }
 
-button[type=submit]:hover
+button[type=submit]:hover,
+#zatwierdz:hover,
+#anuluj:hover
 {
 	background-color: #76BDEA;
+	color: #fff;
 }
 
 input::-webkit-input-placeholder
@@ -244,7 +249,7 @@ footer
 	margin-bottom: 15px;
 }
 
-.col
+.column
 {
 	display: inline-block;
 	padding: 10px;
@@ -282,30 +287,35 @@ textarea
 	resize: none;
 }
 
-#anuluj
+#anuluj,
+#anulujModal
 {
 	background-color: #cc0000;
 }
 
-#anuluj:hover
+#anuluj:hover,
+#anulujModal:hover
 {
 	background-color: #bb0000;
+	color: #fff;
 }
 
-/*Przeglądaj bilans*/
-#west
+#zatwierdz
 {
-	width: 800px;
-	float: left;
+	background-color: #87CEFA;
 }
 
-#east
+#anulujModal,
+#zatwierdz
 {
-	width: 200px;
-	float: left;
-	text-align: center;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	outline: none;
+	margin: 5px;
+	padding: 8px;
 }
-
 /*Przeglądaj bilans - Dropdown */
 .dropbtn 
 {
@@ -319,18 +329,12 @@ textarea
 	width: 160px;
 }
 
-.dropdown 
-{
-	position: relative;
-	display: inline-block;
-}
-
 .dropdown-content 
 {
 	display: none;
 	position: absolute;
 	background-color: #87CEFA;
-	min-width: 160px;
+	width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
 }
@@ -338,20 +342,14 @@ textarea
 .dropdown-content a 
 {
 	color: white;
-	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
-	border-top: 1px dashed #fff;
 }
 
 .dropdown-content a:hover 
 {
-	background-color: #76BDEA
-}
-
-.dropdown:hover .dropdown-content 
-{
-	display: block;
+	background-color: #76BDEA;
+	color: #fff;
 }
 
 .dropdown:hover .dropbtn 
@@ -360,37 +358,8 @@ textarea
 }
 
 /* przeglądaj bilans - tabele */
-#expensesTable
-{
-	margin-bottom: 20px;
-	float: left;
-	width: 350px;
-	border: 3px solid #000;
-}
-#incomesTable
-{
-	margin-bottom: 20px;
-	margin-right: 20px;
-	float: left;
-	width: 350px;
-	border: 3px solid #000;
-}
-
 td, th 
 {
     border: 1px solid #000;
-    text-align: left;
     padding: 8px;
-}
-
-.caption
-{
-	font-size: 20px;
-	font-weight: 700;
-}
-
-.cellResult
-{
-	font-weight: 700;
-	background-color: lightgreen;
 }
